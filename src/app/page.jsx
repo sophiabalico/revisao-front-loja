@@ -1,31 +1,22 @@
 "use client";
-import { useState, useEffect } from 'react';
-import { productsData } from '../data/products';
+import ProductCard from './components/ProductCard/ProductCard';
+import styles from './page.module.css';
+import { productsData } from '../../public/data/products.js';
 
 
-export default function HomePage() {
-  const [products, setProducts] = useState([]);
-  const [productCount, setProductCount] = useState(0);
-
-  // Carregar produtos do arquivo data/products.js
-  useEffect(() => {
-    // Simular carregamento (opcional - pode ser síncrono)
-    setProducts(productsData);
-  }, []);
-
-  // Atualizar contador automaticamente quando produtos mudarem
-  useEffect(() => {
-    setProductCount(products.length);
-  }, [products]);
-
-  
-  
+export default function Home() {
   return (
-    <div>
-      <h1>Total de produtos: {productCount}</h1>
-      <ProductCard product={title} />
+    <div className={styles.products}>
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
     </div>
   );
-
-  
 }

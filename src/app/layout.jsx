@@ -27,7 +27,9 @@ export default function RootLayout({ children }) {
       <Header 
         title="🛒 Loja de Eletrônicos"
         subtitle="Os melhores produtos com os melhores preços!"
-        totalProducts={productCount}
+        totalProducts={10}  // Exemplo de total de produtos
+        
+
       />
         <main>{children}</main>
       </body>
