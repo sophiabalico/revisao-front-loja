@@ -14,8 +14,8 @@ export default function ProductCard({title, price, description, image}) {
                     />
                 </div>
                 <div className={styles.productTitle}>{title}</div>
-                <div className={styles.productPrice}>R$ </div>
-                <div className={styles.productDescription}>teste</div>
+                <div className={styles.productPrice}>R${price}</div>
+                <div className={styles.productDescription}>{description}</div>
                 <div className={styles.productRating}>
                     <span className={styles.stars}>⭐⭐⭐⭐⭐</span>
                     <span>(4.8) - 1.234 avaliações</span>
